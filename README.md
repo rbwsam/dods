@@ -3,5 +3,5 @@
 ## Usage
 
 ```bash
-docker run rbwsam/dods:latest +hostname +map dod_avalanche k00l_$erver +maxplayers 10
+docker run rbwsam/dods:latest +hostname k00l_$erver +map dod_avalanche +maxplayers 10
 ```
