@@ -4,7 +4,7 @@
 
 ```bash
 # Start a server and run it in the background
-docker run -dit --name dods rbwsam/dods:latest +hostname SERVER_NAME +map dod_avalanche +maxplayers 10 +rcon_password password +sv_password password
+docker run -dit --name dods -p 27015:27015 -p 27015:27015/udp -p 27020:27020/udp rbwsam/dods:latest +hostname SERVER_NAME +map dod_avalanche +maxplayers 10 +rcon_password RCON_PASSWORD
 
 # View the server output
 docker logs -f dods
